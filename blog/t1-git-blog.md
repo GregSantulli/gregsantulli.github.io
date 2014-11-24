@@ -2,7 +2,7 @@ Git, Github and the Benefits of Version Control
 
 Greg Santulli
 Dev Bootcamp
-Fiddler Crabs '14
+Fiddler Crabs '15
 
 November 23rd, 2014
 
