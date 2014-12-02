@@ -1,87 +1,138 @@
 /* {border: 1px dashed red;}*/
 
 
+body {
+                background-color: #FDFDF9;
+                margin: auto;
+                border: none;
+                width: 960px;
+                margin-top: 0px;
+}
+
 .canvas {
                 border: none;
-                background-color: white;
+                background-color: #FDFDF9;
                 width: 960px;
-
                 margin: auto;
                 margin-top: 0px;
 }
 
 .header {
                 display: inline-block;
-                background-color: #C4C2C2;
                 width: 920px;
-                height: 170px;
-                margin: 20px 20px 10px 20px;
-                text-align: center;
+                margin: 20px 20px 0px 20px;
                 font-family: Arial, sans-serif;
-                font-size: 2em;
-                color: #363636;
+                color: #FDFDF9;
                 font-weight: bold;
+                position: relative;
+                text-shadow: 3px 3px 3px #16232C;
 }
 
-.header_text {
-                line-height: 170px;
-                display: inline-block;
-                vertical-align:middle;
+
+.header2 {
+                 display: inline-block;
+                font-size: .4em;
+                text-align: justify;
+                margin: 5px 20px 0px 5px;
+                color: #FDFDF9;
+                text-shadow: 3px 3px 1px #16232C;
+                blur: 5px;
+
+}
+
+text-shadow: {blur: 5px;}
+
+h3 {
+                display: inline;
+                position: absolute;
+                top: 80px;
+                left: 20px;
+                color: #FDFDF9;
+                text-align: justify;
+                font-size: 3em;
 }
 
 .center_circle {
                 display: inline-block;
+                position: absolute;
                 border-radius: 50%;
                 vertical-align: middle;
+                position: relative;
+                left: -200px;
+                width: 100%}
 
 
-                  }
 
-.nav_button {
+.header_banner {
                 display: inline-block;
-                background-color: #C4C2C2;
+                position: relative;
+                vertical-align: middle;
+                position: relative;
+                width: 100%
+}
+
+nav {
+                position: relative;
+                display: inline-block;
                 width: 215px;
                 height: 40px;
-                margin: 10px 6px 10px 10px;
+                margin: 0px 6px 0px 10px;
                 text-align: center;
                 font-family: Arial, sans-serif;
                 font-size: 1em;
                 color: #363636;
               }
 
-div:nth-child(2) {margin-left: 20px;}
-div:nth-child(5) {margin-right: 20px;}
-div:nth-child(7) {margin-left: 20px;}
-div:nth-child(8) {width: 450px;}
-div:nth-child(10) {margin-top: 10px;}
+
+
+nav:nth-child(2) {margin-left: 20px;}
+
+nav:nth-child(5) {margin-right: 20px;}
 
 
 
 
-.button {
-                line-height: 40px;
+section nav:first-child {margin: 0px 6px 0px 20px}
+
+section nav:nth-child(2) {margin: 0px 10px 0px 10px;
+                                        width: 450px;}
+
+section nav:nth-child(3) {margin: 0px 0px 0px 6px}
+
+
+
+
+
+
+section {margin-left: 20px
+width: 920px;}
+
+
+.button {   font-size: 1em;
+                line-height: 60px;
                 width: 215px;
                 display: inline-block;
-                vertical-align:middle;}
+                vertical-align:middle;
+                }
 
 .index_button {
-                line-height: 40px;
+                position: relative;
+                line-height: 60px;
                 width: 450px;
                 display: inline-block;
                 vertical-align:middle;}
 
-.blog_type {
+.blog_title {
 
-                background-color: #C4C2C2;
+
                 width: 920px;
                 height: 80px;
-                margin-top: 10px;
-                margin-left: 20px;
+                margin-top: 0px;
                 margin-bottom: 10px;
                 text-align: center;
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: 2em;
-                color: #363636;
+                color: #16232C;
                 font-weight: bold;
 
 
@@ -94,42 +145,60 @@ div:nth-child(10) {margin-top: 10px;}
                 vertical-align:middle;
               }
 
+
+
 .blog {
                 display: inline-block;
-                background-color: #C4C2C2;
+                height: 100%;
+                background-color: #FDFDF9;
                 width: 920px;
-
                 margin: 20px 20px 10px 20px;
                 text-align: center;
                 font-family: Arial, sans-serif;
-                color: #363636;
+                color: #16232C;
 
 }
 
-.blog_title {
-                padding: 10px 100px 10px 100px;
+h4 {
+                position: relative;
+                top: 0px;
+                margin: 0px 0px 0px 0px;
                 display: inline-block;
                 font-size: 1.5em;
               }
 
 .blog_text {
-                padding: 0px 100px 10px 100px;
+                padding: 20px 100px 10px 100px;
                 display: inline-block;
-                font-size: 1em;
+                font-size: 1.5em;
                 text-align: justify;
               }
 
+.align_right {display:block;
+                    text-align: right;
+                    position: relative;
+                    right: 0px;}
 
-.footer {
+
+
+.logos {margin: 10px;}
+
+
+
+
+
+
+footer {
                 display: inline-block;
-                background-color: #C4C2C2;
+                position: relative;
+                background-color: #16232C;
                 width: 920px;
                 height: 100px;
-                margin: 10px 20px 20px 20px;
+                margin: 20px 20px 20px 20px;
                 text-align: center;
                 font-family: Arial, sans-serif;
                 font-size: 1em;
-                color: #363636;}
+                color: #FDFDF9;}
 
 .footer_text {
                 line-height: 100px;
@@ -144,21 +213,26 @@ div:nth-child(10) {margin-top: 10px;}
 
 a:link {
             text-decoration: none;
-            color: #363636;
+            color: #16232C;
 }
 
-a:hover {
+body a:hover {
             display:inline-block;
             text-decoration: none;
-            color: #DDDADA;
-            background-color: #363636;
+            color: #FDFDF9;
+            background-color: #16232C;
+            text-shadow: 0px 0px 10px #FDFDF9;
 }
 
-div span:nth-child(8) {width: 450px;}
+article span:nth-child(8) {width: 450px;}
 
 
+p {
+            font-size: .75em;
+}
 
 
+p a:hover {background-color: #FDFDF9}
 
 
 
