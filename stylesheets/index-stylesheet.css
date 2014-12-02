@@ -25,31 +25,37 @@ body {
                 color: #FDFDF9;
                 font-weight: bold;
                 position: relative;
-                text-shadow: 3px 3px 3px #16232C;
+                text-align: center;
+                text-shadow: 0px 0px 10px black;
 }
 
 
 .header2 {
-                 display: inline-block;
+                display: block;
                 font-size: .4em;
-                text-align: justify;
-                margin: 5px 20px 0px 5px;
+                letter-spacing: 5px;
+                text-align: center;
+                margin: 5px 5px 5px 5px;
                 color: #FDFDF9;
-                text-shadow: 3px 3px 1px #16232C;
-                blur: 5px;
+                text-shadow: 3px 3px 5px black;
+
 
 }
 
-text-shadow: {blur: 5px;}
 
 h3 {
-                display: inline;
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
                 position: absolute;
+                text-align: center;
                 top: 80px;
-                left: 20px;
                 color: #FDFDF9;
-                text-align: justify;
                 font-size: 3em;
+                letter-spacing: 10px;
+                width: 920px;
+                text-shadow: 3px 0px 10px black;
 }
 
 .center_circle {
@@ -102,11 +108,6 @@ article:nth-child(8) {width: 450px;}
                 vertical-align:middle;
                 }
 
-.index_button {
-                line-height: 40px;
-                width: 450px;
-                display: inline-block;
-                vertical-align:middle;}
 
 .blog_type {
 
