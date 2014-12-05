@@ -10,6 +10,9 @@ body {
                 text-align:center;
                 }
 
+
+
+
 a {text-decoration: none}
 
 
@@ -93,6 +96,11 @@ nav a:hover {
 }
 
 
+p a {margin-left: 10px;
+margin-right: 10px;
+text-decoration: none;}
+
+a:visited {color: #16232C}
 
 
 .blog_button {display: inline-block;
@@ -177,10 +185,6 @@ h4 {
     width: 100%;
     text-align: center;
             }
-
-p a {margin-left: 10px;
-margin-right: 10px;
-text-decoration: none;}
 
 
 
