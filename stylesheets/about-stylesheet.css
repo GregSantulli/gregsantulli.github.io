@@ -115,13 +115,19 @@ margin-bottom: 1em;
 
 header p a {display: inline-block;
 text-align: center;
-margin: auto;
 }
 
-.back_to_index {margin: auto;
+.back_to_index {margin-right: 10%;
+  margin-left: 10%;
 text-align: center;}
 
 div.photos p {text-align: right;
 padding-right: 10%}
 
 h4 {text-align: center;}
+
+.blog_nav {text-align: center;}
+
+header p img.small {height: 50px;
+  margin-right: 1em;
+}
