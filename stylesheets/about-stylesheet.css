@@ -49,8 +49,18 @@ header {   position: absolute;
 #blog {width: 40%;
            font-weight: normal;}
 
-#blog_text {width: 100%;
-           font-weight: normal;}
+.blog_text {width: 100%;
+           font-weight: normal;
+           display: block;
+           height: 100%;}
+
+#blog_img {width: 50%;
+           font-weight: normal;
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           height: 100%;
+           float: center;}
 
   a:link {color: white;
   }
@@ -127,8 +137,24 @@ padding-right: 10%}
 h4 {text-align: center;}
 
 .blog_nav {text-align: center;
-margin-top: 5%}
+margin-top: 5%:;
+display:block;
+}
 
 header p img.small {height: 50px;
   margin-right: 1em;
+}
+
+img.center {text-align: center;}
+
+li {font-weight: normal;
+font-size: .5em;
+}
+
+ol {position: relative;
+  display: block;
+  margin-left: auto;
+    margin-right: auto;
+    float: center;
+
 }
