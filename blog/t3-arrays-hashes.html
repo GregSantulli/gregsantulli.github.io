@@ -30,22 +30,32 @@
       <h4>T3: ARRAYS AND HASHES</h4>
 
       <p class="blog_text">
-          <img class="small" src="../imgs/css3.png"/>All HTML elements are enclosed in boxes. Each box consists of four layers that determine the design and layout of each box. The diagram below shows the placement of the four layers.
-      </p>
-      <img id="blog_img" src="../imgs/box-model.gif"/>
-      <p class="blog_text">
-        <ol>
-          <li><srong>Content</strong>: The content of the box, where text and images appear</li>
-          <li><srong>Padding</strong>: Clears an area around the content. The padding is transparent</li>
-          <li><srong>Border</strong>: A border that goes around the padding and content</li>
-          <li><srong>Margin</strong>: Clears an area outside the border. The margin is transparent</li>
-        </ol>
-      </p>
-      <p>
+          In programming, we frequently deal with a collection of objects such as names from a database or entires of a blog. We can  search, sort, filter, and futher manipulate these collections to meet out needs. This is all made possible by <em>container</em> objects in Ruby. The two most common container objects are <strong>Arrays</strong> and <strong>Hashes</strong>.<br><br>
+
+          ARRAYS are ordered collections of objects. Ordered meaning that each object is stored in a consistent, consecutive numerical index within the array. Consider the following array:<br><br>
+
+
+        <span class=" code">
+        $ new_array = [1, 2, 3 , 4, 5]
+
+        </span><br>
+
+        Here we are creating an array consisting of the integers 1-5 and assigninging to to the variable <em>new_array</em>. One of the easiest ways to create an array is to just wrap a group of objects between brackets [ ] with each object separated by a comma. The order in which each object is listed determines each object's index. You can think of the an objects index as its position in the array. The first object in the array has an index of 0, the second has an index of 1, the third 2 and so fourth. This makes it east to locate an object based on its relative location within the array:<br><br>
+
+
+        <span class=" code">
+
+        $ new_array = ["dev", "boot", "camp", "is", "my", "jam!"]<br>
+        $ puts new_array[2]<br>
+        >> "camp"
+
+
+        </span><br>
 
 
 
 
+    </p>
 
 <p class="blog_nav">
     <a href="t8.html">&lt; PREV</a>
