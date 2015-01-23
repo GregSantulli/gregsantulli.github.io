@@ -106,8 +106,7 @@ font-size: 1em}
 
 .back {position: fixed;
   left: 0px;
-  bottom: 10%;
-  background-color: black;
+  bottom: 0px;
   padding: 20px;
   font-weight: bold;
   }
