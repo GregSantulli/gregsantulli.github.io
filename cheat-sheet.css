@@ -1,0 +1,50 @@
+body {
+  background-color: #e0e0e0;
+  font-family: arial;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+}
+
+h1 {
+  background-color: grey;
+  text-align: center;
+  margin: 0px;
+  line-height: 100px;
+}
+
+h2 {
+  padding-left: 5%;
+}
+
+p {
+  padding-left: 10px;
+}
+
+.nav_bar {
+  float: left;
+  width: 20%;
+  margin: 0px;
+  display: inline-block;
+  position: absolute;
+  padding: 10px;
+}
+
+.content {
+    border-left: solid;
+  float: right;
+  width: 80%;
+  position: absolute;
+  right: 0px;
+  display: inline-block;
+}
+
+.topic li {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.math_list li {
+  font-weight: normal;
+  text-decoration: none;
+}
