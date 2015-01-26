@@ -1,5 +1,5 @@
 body {
-  background-color: #e0e0e0;
+  background-color: white;
   font-family: arial;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  background-color: grey;
+  background-color: gray;
   text-align: center;
   margin: 0px;
   line-height: 100px;
@@ -21,6 +21,10 @@ p {
   padding-left: 10px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .nav_bar {
   float: left;
   width: 20%;
@@ -29,6 +33,14 @@ p {
   position: absolute;
   padding: 10px;
 }
+
+.nav_bar a {display: block;
+  line-height: 50px;
+  margin-left: 20px
+
+}
+
+a:link {color: black;}
 
 .content {
     border-left: solid;
@@ -47,4 +59,27 @@ p {
 .math_list li {
   font-weight: normal;
   text-decoration: none;
+}
+
+td {
+   border: 1px solid #EEEEEE;
+   padding-left: 10px;
+
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.alt {
+  background-color: #EEEEEE;
+}
+
+.code {
+  background-color: #EEEEEE;
+  font-family: courier;
+  padding: 5px;
+  width: 90%
+
 }

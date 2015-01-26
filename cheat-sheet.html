@@ -9,46 +9,103 @@
 	<body>
     <h1>JavaScript Cheat Sheet</h1>
     <div class="nav_bar">
-      <ul>
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#math">Math</a></li>
-        <li><a href="#objects">Objects</a></li>
-        <li><a href="#loops">Loops</a></li>
-        <li><a href="#s_methods">String Methods</a></li>
-        <li><a href="#a_methods">Array Methods</a></li>
-
-      </ul>
+        <a href="#intro">Intro</a>
+        <a href="#math">Math</a>
+        <a href="#objects">Objects</a>
+        <a href="#loops">Loops</a>
+        <a href="#s_methods">String Methods</a>
+        <a href="#a_methods">Array Methods</a>
     </div>
+
     <div class="content">
     <ul class="topic">
-      <li id="intro">Introduction</li>
+
+      <div class="bold">Introduction</div>
       <p>JavaScript is the most popular programming language in the world. JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.</p>
 
-      <li id="math">Math</li>
-      <p>The Math object allows you to perform mathematical tasks on numbers.</p>
-      	<ul class="math_list">
-        	<li>max(x,y,z,...,n) - Returns the number with the highest value</li>
-        	<li>min(x,y,z,...,n) - Returns the number with the lowest value</li>
-        	<li>pow(x,y) - Returns the value of x to the power of y</li><li>random() - Returns a random number between 0 and 1</li><br>	
-      	</ul>
-   
-      <li id="objects">Objects</li>
-      <p>JavaScript objects are containers for named values, called properties and methods. The name:values pairs are the properties. Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.</p>
-      <p>You define (and create) a JavaScript object with an object literal: <br><code>var person = {firstName:"John"} </code>. <br> <br>You can access object properties in two ways:<br> 1. objectName.propertyName<br>2. objectName[propertyName]</p>
-      <p>Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.</p>
-      <li id="loops">For Loop</li>
-      <p>JavaScript supports different kinds of loops:<br>
 
-			1. for - loops through a block of code a number of times<br>
-			2. for/in - loops through the properties of an object<br>
-			3. while - loops through a block of code while a specified condition is true<br>
-			4. do/while - also loops through a block of code while a specified condition is true<br>
-			</p>
-			<p>1. The for loop has the following syntax:<br><code>
+      <div class="bold">Math</div>
+      <p>The Math object allows you to perform mathematical tasks on numbers.</p>
+    <p>
+    <table>
+      <tr>
+        <td>Math.max(x,y,z,...,n)</td>
+        <td>Math.Returns the number with the highest value</td>
+      </tr>
+      <tr class="alt">
+        <td>Math.min(x,y,z,...,n)</td>
+        <td>Returns the number with the lowest value</td>
+      </tr>
+      <tr>
+        <td>Math.pow(x,y)</td>
+        <td>Returns the value of x to the power of y</td>
+      </tr>
+       <tr class="alt">
+        <td>Math.random()</td>
+        <td>Returns a random number between 0 and 1</td>
+      </tr>
+    </table>
+    </p>
+      <div class="bold">
+        Objects
+      </div>
+      <p>JavaScript objects are containers for named values, called properties and methods. The name:values pairs are the properties. Methods are actions that can be performed on objects. Methods are stored in properties as function definitions.
+      </p>
+      <p>You define (and create) a JavaScript object with an object literal:
+      </p>
+      <p class="code">
+        var person = {firstName:"John"}
+      </p>
+      <p>
+        You can access object properties in two ways:
+      </p>
+
+      <p>
+        <table>
+          <tr>
+            <td>Dot Notation</td>
+            <td>objectName.propertyName</td>
+          </tr>
+           <tr class="alt">
+            <td>Bracket Notation</td>
+            <td>objectName[propertyName]</td>
+          </tr>
+        </table>
+
+      <p>Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.</p>
+
+      <div class="bold">For Loop</div>
+      <p>
+        JavaScript supports different kinds of loops:
+      </p>
+
+      <p>
+        <table>
+      <tr>
+        <td>for</td>
+        <td>Loops through a block of code a number of times</td>
+      </tr>
+      <tr class="alt">
+        <td>for/in</td>
+        <td>Loops through the properties of an object</td>
+      </tr>
+       <tr>
+        <td>while</td>
+        <td>Loops through a block of code while a specified condition is true</td>
+      </tr>
+      <tr class="alt">
+        <td>do/while</td>
+        <td>Also loops through a block of code while a specified condition is true</td>
+      </tr>
+      </table>
+    </p>
+
+			<p>1. The for loop has the following syntax:<br><br>
+      <code>
 
 				for (statement 1; statement 2; statement 3) {<br>
 				    code block to be executed<br>
-				}</code><br>
+				}</code><br><br>
 				Statement 1 is executed before the loop (the code block) starts.<br>
 
 				Statement 2 defines the condition for running the loop (the code block).<br>
@@ -117,7 +174,7 @@ toString() -	Returns the value of a String object<br>
 toUpperCase()	- Converts a string to uppercase letters<br>
 trim() - Removes whitespace from both ends of a string<br>
 valueOf()	- Returns the primitive value of a String object<br><br><br>
-    
+
 				<li id="a_methods">Array Methods</li>
       		<p>Methods and descriptions are:</p>
       	 concat() -	Joins two or more arrays, and returns a copy of the joined arrays<br>
@@ -134,7 +191,7 @@ splice() -	Adds/Removes elements from an array<br>
 toString() -	Converts an array to a string, and returns the result<br>
 unshift()	- Adds new elements to the beginning of an array, and returns the new length<br>
 valueOf()	- Returns the primitive value of an array<br>
-    </ul>
+
     </ul>
 
 		</div>
