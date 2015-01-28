@@ -21,7 +21,21 @@ body {
   padding-right: 5%;
 }
 
+.indent {
+  margin-left: 5%
+}
 
+.class {
+  color: orange;
+}
+
+.method {
+  color: yellow;
+}
+
+.instance {
+  color: #ADD8E6;
+}
 
 .code {
   font-family: Courier;
