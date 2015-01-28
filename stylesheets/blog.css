@@ -67,3 +67,17 @@ h4 {
   text-align: center;
   font-size: 1.5em;
 }
+
+
+ul {
+  padding-right: 10%;
+}
+
+.align_bottom_right {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+
+}
+
