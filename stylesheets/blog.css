@@ -81,3 +81,30 @@ ul {
 
 }
 
+.bold {
+  font-weight: bold;
+}
+
+
+td {
+   border: 1px solid #D6D6D6;
+   padding: 4px 10px 4px 10px ;
+
+}
+
+table {
+  margin: auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.alt {
+  background-color: #EEEEEE;
+}
+
+.sources {
+  font-style: italic;
+  font-size: .8em;
+  color: gray;
+
+}

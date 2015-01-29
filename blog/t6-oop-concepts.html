@@ -2,37 +2,246 @@
 
 
 <head>
-  <title>T4: ENUMERABLE METHODS</title>
+  <title>T6: OBJECT ORIENTED PROGRAMMING</title>
   <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/about-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
-    <div class="gradient"></div>
-    <header>
-      <a href="blog-index.html"><span>blog</span></a>
-      <div class="menu">
-              <a href="../photos.html">photos</a>
-              <a href="../contact.html">contact</a>
-               <a href="../index.html">home</a>
-      </div>
-      <h4>T4: ENUMERABLE METHODS</h4>
-          <p class="blog_text">
-              All HTML elements are enclosed in boxes. Each box consists of four layers that determine the design and layout of each box. The diagram below shows the placement of the four layers.
-          </p>
+
+  <h4>
+    T6: OBJECT ORIENTED PROGRAMMING
+  </h4>
+
+  <div class="content">
+    <p class="bold">
+      Object Oriented vs. Functional Programming
+    </p>
+
+    <p>
+      In programming terms, <em>composition</em> is about making more complex programs out of simpler programs, without modifying the simpler pieces. Both Object Oriented Programming (OOP) and Functional Programming (FP) use this idea to compose large programs out of smaller ones. The biggest difference between the two concerns the relationship between data and operations on the data.
+    </p>
+
+    <p>
+      In OOP, data and the operations upon it are tightly coupled: An object owns its data and it owns the implementation of the operations on the data. New objects are composed and existing objects are extended by adding new methods to them.
+    </p>
+
+    <p>
+      In FP, data is only loosely coupled to functions. You can write different operations on the same data structure, and the central model for abstraction is the function, not the data structure. The central activity in FP is writing new functions.
+    </p>
+
+    <p class ="bold">
+      Variable Scope
+    </p>
+
+    <p>
+      Scope defines where in a program a variable is accessible. Ruby has four types of variable scope, local, global, instance and class. In addition, Ruby has one constant type. Each variable type is declared by using a special character at the start of the variable name:
+    </p>
+
+    <p>
+      <table>
+        <tbody>
+          <tr>
+            <th>Name Begins With</th>
+            <th>Variable Scope</th>
+          </tr>
+          <tr class="alt">
+            <td>$</td>
+            <td>A global variable </td>
+          </tr>
+          <tr>
+            <td>@</td>
+            <td>An instance variable</td>
+          </tr>
+          <tr class="alt">
+            <td>[a-z]or _</td>
+            <td>A local variable </td>
+          </tr>
+          <tr>
+            <td>[A-Z]</td>
+            <td>A constant</td>
+          </tr>
+          <tr class="alt">
+            <td>@@</td>
+            <td>A class variable</td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+
+    <div class="indent">
+
+      <p class="bold">
+        Local Variables
+      </p>
+
+      <p>
+        Local variables are local to the code construct in which they are declared. For example, a local variable declared in a method or within a loop cannot be accessed outside of that loop or method. Local variable names must begin with either an underscore or a lower case letter. For example:
+      </p>
+
+      <p class="code">
+        loopcounter = 10<br>
+        _LoopCounter = 20
+      </p>
+
+      <p class="bold">
+        Global Variables
+      </p>
+
+      <p>Global variables in Ruby are accessible from anywhere in the Ruby program, regardless of where they are declared. Global variable names are prefixed with a dollar sign ($):
+      </p>
+
+      <p class="code">
+        $welcome = "Welcome to Ruby Essentials"
+      </p>
+
+      <p>
+        Use of global variables is strongly discouraged. The problem with global variables is that, not only are they visible anywhere in the code for a program, they can also be changed from anywhere in the application. This can make tracking bugs difficult.
+      </p>
+
+      <p>There are, however, a number of pre-defined global variables are available to obtain information about the Ruby environment:
+      </p>
+
+      <p>
+        <table>
+          <tbody>
+            <tr>
+              <th>Variable Name</th>
+              <th>Variable Value</th>
+            </tr>
+            <tr class="alt">
+              <td>$@</td>
+              <td> The location of latest error </td>
+            </tr>
+            <tr>
+              <td>$_</td>
+              <td> The string last read by gets</td>
+            </tr>
+            <tr class="alt">
+              <td>$.</td>
+              <td> The line <em>number</em> last read by interpreter </td>
+            </tr>
+            <tr>
+              <td>$&amp;</td>
+              <td> The string last matched by regexp </td>
+            </tr>
+            <tr class="alt">
+              <td>$~</td>
+              <td> The last regexp match, as an array of subexpressions </td>
+            </tr>
+            <tr>
+              <td>$<em>n</em></td>
+              <td> The <em>nth</em> subexpression in the last match (same as $~[<em>n</em>] </td>
+            </tr>
+            <tr class="alt">
+              <td>$=</td>
+              <td> The case-insensitivity flag </td>
+            </tr>
+            <tr>
+              <td>$/</td>
+              <td> The input record separator </td>
+            </tr>
+            <tr class="alt">
+              <td>$\</td>
+              <td> The output record separator </td>
+            </tr>
+            <tr>
+              <td>$0</td>
+              <td> The name of the ruby script file currently executing</td>
+            </tr>
+            <tr class="alt">
+              <td>$*</td>
+              <td> The command line arguments used to invoke the script</td>
+            </tr>
+            <tr>
+              <td>$$</td>
+              <td> The Ruby interpreter's process ID </td>
+            </tr>
+            <tr class="alt">
+              <td>$?</td>
+              <td> The exit status of last executed child process</td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+
+      <p class="bold">
+        Class Variables
+      </p>
+
+      <p>
+        A class variable is a variable that is shared amongst all instances of a class. This means that only one variable value exists for all objects instantiated from this class. This means that if one object instance changes the value of the variable, that new value will essentially change for all other object instances. Another way of thinking of thinking of class variables is as global variables within the context of a single class.
+        Class variables are declared by prefixing the variable name with two @ characters (@@). Class variables must be initialized at creation time.
+      </p>
+
+      <p class ="code">
+        @@total = 0
+      </p>
+
+      <p class="bold">
+        Instance Variables
+      </p>
+
+      <p>
+        Instance variables are similar to Class variables except that their values are local to specific instances of an object. For example if a class contains an instance variable called @total, if one instance of the object changes the current value of @total the change is local to only the object that made the change. Other objects of the same class have their own local copies of the variable which are independent of changes made in any other objects. Instance variables are declared in Ruby by prefixing the variable name with a single @ sign:
+      </p>
+
+      <p class ="code">
+        @total = 0
+      </p>
+
+      <p class="bold">
+        Constants
+      </p>
+
+      <p>
+        Ruby constants are values which, once assigned a value, should not be changed. I say should because Ruby differs from most programming languages in that it allows a constant value to be changed after it has been declared, although the interpreter will protest slightly with a warning message. Constants declared within a class or module are available anywhere within the context of that class or module. Constants declared outside of a class or module are assigned global scope.
+      </p>
+
+    </div>
+
+    <p class="bold">
+      Class Methods
+    </p>
+
+    <p>In ruby, classes are also objects, so the methods you define as class methods only exist in the object that defined them (the class) and nowhere else. If you define <em>my_class_method</em> in a class named <em>Test,</em> <em>my_class_method<em> will only live into the object Test, which is an instance of a built-in ruby class named Class.
+    </p>
+
+    <p class="sources">Sources: <br>
+      <a href="http://zeroturnaround.com/rebellabs/why-the-debate-on-object-oriented-vs-functional-programming-is-all-about-composition/">
+        Why the debate on Object-Oriented vs Functional Programming is all about composition</a>
+      <br>
+      <a href="http://raganwald.com/2013/04/08/functional-vs-OOP.html">
+        When FP? And when OOP?</a>
+      <br>
+      <a href="http://www.techotopia.com/index.php/Ruby_Variable_Scope">
+        Ruby Variable Scope</a>
+        <br>
+      <a href=" http://www.rubyfleebie.com/3-steps-to-understand-how-classes-and-objects-work-in-ruby/">
+        3 steps to understand how classes and objects work in ruby</a>
+    </p>
 
 
-     <p class="blog_nav">
+
+  </div>
+
+
+
+
+
+    <!--  <p class="blog_nav">
         <a href="t8.html">&lt; PREV</a>
         <a class="back_to_index" href="blog-index.html">BACK TO INDEX</a>
         <a href="t2.html">NEXT &gt;</a>
       </p>
-    </header>
 
 
+ -->
 
 
 
 
 
 </body>
+
+
