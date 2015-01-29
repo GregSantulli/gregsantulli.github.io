@@ -1,0 +1,59 @@
+
+.header {
+  background-color: black;
+  width: 100%;
+  text-align: left;
+  position: fixed;
+  color: white;
+  height: 50px;
+  top:0px;
+  right: 0px;
+  left: 0px;
+  line-height: 50px;
+  vertical-align: middle;
+  padding-left: 10px;
+  font-size: 1.5em;
+
+
+
+}
+
+.nav {
+  display: inline-block;
+  height: 50px;
+  text-align: left;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.nav a {
+
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: .65em;
+  text-decoration: none;
+  height:50px;
+  line-height: 50px;
+  position: inline-block;
+  top: 0px;
+  vertical-align: middle;
+ /* border-left: 2px solid white;*/
+  float: left;
+
+
+}
+
+.nav a:link {
+  color: white;
+}
+
+.nav a:visited {
+  color: white;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
