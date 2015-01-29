@@ -4,65 +4,52 @@
 <head>
   <title>T3: ARRAYS AND HASHES</title>
   <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/about-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
 
-
-<div class="gradient"></div>
-
-      <header>
-
-        <a href="blog-index.html"><span>blog</span></a>
-
-
-<div class="menu">
-
-        <a href="../photos.html">photos</a>
-        <a href="../contact.html">contact</a>
-         <a href="../index.html">home</a>
-
-</div>
-
-
-
       <h4>T3: ARRAYS AND HASHES</h4>
 
-      <p class="blog_text">
-          In programming, we frequently deal with a collection of objects such as names from a database or entires of a blog. We can  search, sort, filter, and futher manipulate these collections to meet out needs. This is all made possible by <em>container</em> objects in Ruby. The two most common container objects are <em>Arrays</em> and <em>Hashes</em>.<br><br>
+      <p>
+        In programming, we frequently deal with a collection of objects such as names from a database or entires of a blog. We can  search, sort, filter, and futher manipulate these collections to meet out needs. This is all made possible by <em>container</em> objects in Ruby. The two most common container objects are <em>Arrays</em> and <em>Hashes</em>.
+      </p>
 
-          ARRAYS are ordered collections of objects. Each object is stored in a consistent, consecutive numerical index within the array. Consider the following array:<br><br>
+      <p>
+        ARRAYS are ordered collections of objects. Each object is stored in a consistent, consecutive numerical index within the array. Consider the following array:
+      </p>
 
-        <span class="code">
+        <p class="code">
         $ new_array = [1, 2, 3 , 4, 5]
-        </span><br>
+        </p>
 
-        Here we are creating an array consisting of the integers 1-5 and assigninging to to the variable <em>new_array</em>. One of the easiest ways to create an array is to just wrap a group of objects between brackets [ ] with each object separated by a comma. The order in which each object is listed determines each object's index. You can think of the an objects index as its position in the array. The first object in the array has an index of 0, the second has an index of 1, the third 2 and so fourth. This makes it east to locate an object based on its relative location within the array:<br><br>
+        <p>
+          Here we are creating an array consisting of the integers 1-5 and assigninging to to the variable <em>new_array</em>. One of the easiest ways to create an array is to just wrap a group of objects between brackets [ ] with each object separated by a comma. The order in which each object is listed determines each object's index. You can think of the an objects index as its position in the array. The first object in the array has an index of 0, the second has an index of 1, the third 2 and so fourth. This makes it east to locate an object based on its relative location within the array:
+        </p>
 
-        <span class="code">
+        <p class="code">
         $ new_array = ["dev", "boot", "camp", "is", "my", "jam!"]<br>
         $ puts new_array[2]<br>
         >> "camp"
-        </span><br>
+        </p><br>
 
         Each element in the array can be any object including numbers, strings, booleans, hashes, even other arrays. The contents of the array remain in the same exact order unless you explicitly add, remove, or move elements. <br><br>
 
         HASHES, on the other hand, store objects in pairs consiting of a <em>key</em> and a <em>value</em>. A common way to create a hash is with the literal constrictor, or curly braces: {}. Each key/value pair is assigned using the => operator, and each pair is separated by a comma. The following example shows a new hash with three key/value pairs:<br><br>
 
-        <span class="code">
+        <p class="code">
           $ new_hash = { 1 => "one", 2 => "two", "Name" => "Greg" }
 
-        </span><br>
+        </p><br>
 
         Each key or value can be any object. Each key can be assigned multiple values, however the keys themselves must be unique to each hash. You can retrieve a value in a hash by looking up the corresponding key:<br><br>
 
-        <span class="code">
+        <p class="code">
          $   new_hash[1]<br>
          >> "one"<br>
          $   new_hash["Name"]<br>
          >> "Greg"
-        </span><br>
+        </p><br>
 
         Array are like hashes where the keys are consecutive integers starting from 0. Hashes are like arrays where the indexes are allowed to be any object, not just integers.<br>
         <br>
@@ -70,11 +57,11 @@
 
     </p>
 
-<p class="blog_nav">
+<!-- <p class="blog_nav">
     <a href="t8.html">&lt; PREV</a>
     <a class="back_to_index" href="blog-index.html">BACK TO INDEX</a>
     <a href="t2.html">NEXT &gt;</a>
- </p>
+ </p> -->
 
 
 </header>
