@@ -2,37 +2,168 @@
 
 
 <head>
-  <title>T4: ENUMERABLE METHODS</title>
+  <title>T7: JAVASCRIPT OBJECTS VS. RUBY HASHES</title>
   <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../stylesheets/about-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 </head>
 
 <body>
 
-    <header>
-      <a href="blog-index.html"><span>blog</span></a>
-      <div class="menu">
-              <a href="../photos.html">photos</a>
-              <a href="../contact.html">contact</a>
-               <a href="../index.html">home</a>
-      </div>
-      <h4>T4: ENUMERABLE METHODS</h4>
-          <p class="blog_text">
-              All HTML elements are enclosed in boxes. Each box consists of four layers that determine the design and layout of each box. The diagram below shows the placement of the four layers.
-          </p>
+  <h4>
+    T7: JAVASCRIPT OBJECTS VS. RUBY HASHES
+  </h4>
 
+  <div class="content">
+    <p>
+      JavaScript Objects and Ruby hashes are both containers that store information pairs. They behave somewhat similarly, but have some pretty big differences, too. Lets take a look at each to see how they compare.
+    </p>
 
-     <p class="blog_nav">
+    <p>A JavaScript object and its properties can be created using the literal notation as such:</p>
+
+    <p class="code">
+      var <span class="method">obj</span> = {<br>
+      <span class="indent">
+        name: "Greg",<br>
+      <span class="indent">
+        age: 25<br>
+      </span>
+      </span>
+      };
+    </p>
+
+    <p>We can then access these properties in a similar way we would a Ruby hash:</p>
+
+    <p class="code">
+      console.log(<span class="method">obj</span>["name"])<br>
+      <span class="comment">// => "Greg"</span>
+    </p>
+
+    <p>
+      Object's properties can also be objects. They can also be a function that executes when the property is called.
+    </p>
+
+    <p>
+      Now let's take a look at Ruby hashes:
+    </p>
+
+    <p class="code">
+      <span class="method">new_hash</span> = {<br>
+      <span class="indent">
+        name: "Greg",<br>
+        <span class="indent">
+        age: 25<br>
+      </span>
+      </span>
+      }<br>
+      <br>
+      p <span class="method">new_hash</span>[:name]<br>
+      <span class="comment"># => "Greg"</span>
+    </p>
+
+    <p>
+      Like JavaScript objects, Ruby hashes contain properties (here called <em>key/value</em> pairs) that referece other data. As you can see, Ruby hashes and JavaScript objects both act as libraries or <em>containers</em> of references to other objects. One of the main differences between the two has to do with how the data inside is accessed by the rest of the program.
+    </p>
+
+    <p>
+      JavaScript does not restrict access to object properties; they can be accessed from anyhere in the program. Ruby, however, encapsulates data within each instance of an object's <em>Class</em>. In order to access these properties, an object's class must define a method that can do so.
+    </p>
+
+    <p class="code">
+      class
+      <span class="class">
+        Person
+      </span>
+      <br>
+      <span class="indent">
+        def <span class="method">initialize</span>(name, age)</span>
+      <br>
+      <span class="indent">
+        <span class="indent">
+          @name = name
+        </span>
+      </span>
+      <br>
+      <span class="indent">
+        <span class="indent">
+          @age = age
+        </span>
+      </span>
+      <br>
+      <span class="indent">end</span>
+      <br>
+      <span class="indent">
+        def <span class="method">name</span>
+      </span>
+      <br>
+      <span class="indent">
+        <span class="indent">
+          puts @name
+        </span>
+      </span>
+      <br>
+      <span class="indent">end</span>
+      <br>
+      end<br>
+      <br>
+      greg = <span class="class">Person</span>.new("Greg", 25)<span class="comment"># New instance of Person class</span>
+    <br>
+      greg.name <span class="comment"># => "Greg"</span>
+    </p>
+
+    <p>
+      Above we defined a new class <em>Person</em> that accepts properties <em>name</em> and <em>age</em>. Within the class we defined method <em>name</em> that simply puts the instance variable <em>@name</em>. Had we not defined this within the class, calling <em>name</em> on our new object <em>greg</em> would have returned a no-method error.
+    </p>
+
+    <p>
+      Lucky for us, Ruby provides an easier way of creating methods that provide access to instance variables called <em>attribute</em> methods:
+    </p>
+
+    <p class="code">
+      class
+      <span class="class">
+        Person
+      </span>
+      <br>
+      <span class="indent method">attr_reader</span> :name
+      <br>
+      <span class="indent">
+        def <span class="method">initialize</span>(name, age)</span>
+      <br>
+      <span class="indent">
+        <span class="indent">
+          @name = name
+        </span>
+      </span>
+      <br>
+      <span class="indent">
+        <span class="indent">
+          @age = age
+        </span>
+      </span>
+      <br>
+      <span class="indent">end</span>
+      <br>
+      end<br>
+
+    <p>
+      <em>attr_reader :name</em> accomplishes the same thing as defining the <em>name</em> method in the previous example. It allows us to read the name attribute of the current instance of the Person class.
+    </p>
+
+</div>
+
+    <!--  <p class="blog_nav">
         <a href="t8.html">&lt; PREV</a>
         <a class="back_to_index" href="blog-index.html">BACK TO INDEX</a>
         <a href="t2.html">NEXT &gt;</a>
       </p>
-    </header>
 
 
+ -->
 
 
 
 
 
 </body>
+
+
