@@ -2,22 +2,273 @@
 
 
 <head>
-  <title>Greg Santulli - DBC '15</title>
+  <title>Greg Santulli | Web Developer</title>
   <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.0/bootstrap-social.css">
+
+  <link rel="stylesheet" href="font-mfizz-1.2/font-mfizz.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Droid+Sans|News+Cycle' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+
+
   <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <script src="dropdown.js"></script>
 </head>
 
-<body>
-<img src="imgs/skoga.jpg" alt="Banner"/>
- <div class="gradient"></div>
-      <header>
+<body data-spy="scroll" data-target="#navbar">
 
-        <div class="header">greg santulli
-  <div class="nav">
-    <a href="mailto:gregsantulli@gmail.com">CONTACT</a>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">GREG SANTULLI | Web Developer</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <!-- <li><a href="#">EXPERIENCE</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CONTACT <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="mailto:gregsantulli@gmail.com">gregsantulli@gmail.com</a></li>
+              <li class="divider"></li>
+
+              <li><a href="https://github.com/GregSantulli">
+                <i class="fa fa-github menu_icons"></i> GitHub</a></li>
+                <li><a href="https://www.facebook.com/gregsantulli"><i class="fa fa-facebook menu_icons"></i> Facebook</a></li>
+                <li><a href="https://twitter.com/greg_santulli"><i class="fa fa-twitter menu_icons"></i> Twitter</a></li>
+                <li><a href="https://www.linkedin.com/in/gregsantulli">
+                  <i class="fa fa-linkedin menu_icons"></i> LinkedIn</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+<!--   <div class="navigation_container">
+    <span class="header">
+      <div class="large_font">
+        GREG SANTULLI
+      </div>
+
+      <div class="pipe">
+
+      </div>
+
+      <div>WEB DEVELOPER</div>
+    </span>
+
+    <span class="button-container" role="navigation">
+
+      <span class="nav-button"> <a href="">ABOUT</a></span>
+      <span class="nav-button"> <a href="">SKILLS</a></span>
+      <span class="nav-button"><a href="">PROJECTS</a></span>
+      <span class="nav-button"> <a href="">EXPERIENCE</a></span>
+      <span class="nav-button"><a href="">CONTACT</a></span>
+    </span>
+
+
+    <div class="nav-mini-button">
+      <div class="mini-button-bar"></div>
+      <div class="mini-button-bar"></div>
+      <div class="mini-button-bar"></div>
+      <div class="mini-button-bar"></div>
+
+    </div>
+
+
+  </div> -->
+
+  <div class="contact_bar_container container">
+
+    <div>contact info</div>
   </div>
-</div>
+
+
+  <div id="home" class="row sf">
+    <!-- <img src="http://interfacelift.com/wallpaper/D3e3abb7/03307_sfnighttimeskyline_1920x1080.jpg" alt=""> -->
+    <div class="col-sm-12">
+      <div class="name_box">
+        <div class="name">GREG SANTULLI</div>
+        <div class="double_line"></div>
+        <div class="web_dev">WEB DEVELOPER</div>
+      </div>
+    </div>
+
+    <div class="down_arrow">
+      <div class="glyphicon glyphicon-chevron-down"></div>
+    </div>
+
+
+  </div>
+
+
+  <div id="about" class="container">
+
+
+    <div class="about row">
+      <div class="col-sm-4 col-sm-offset-1">
+        <img class="headshot" src="imgs/headshot.jpg" alt="Headshot">
+      </div>
+
+      <div class="col-sm-5 col-sm-offset-1">
+
+        <div class="tag_line">
+          <div class="welcome_box">
+            <div class="large_font">Hi, I'm Greg.</div>
+            <p>I'm a recent <a href="http://devbootcamp.com/">Dev Bootcamp</a> graduate looking for a full-time opportunity to work and grow with a team of like-minded individuals. </p>
+            <p>I enjoy building clean, concise code and am always eager to learn new technologies. </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="skills" class="my_skills content_panel">
+    <div class="row skills_header">
+      <div class="larger_font">SKILLS</div>
+      <div class="">What I can do.</div>
+    </div>
+
+    <div class="row skills">
+      <div class="col-md-3">
+        <i class="icon icon-ruby"></i> Ruby
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-ruby-on-rails"></i> Ruby on Rails
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-javascript"></i> JavaScript
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-database"></i> </i> SQL
+      </div>
+    </div>
+    <div class="row skills">
+      <div class="col-md-3">
+        <i class="icon icon-html"></i> HTML
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-css"></i> CSS
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-heroku"></i> Heroku
+      </div>
+      <div class="col-md-3">
+        <i class="icon icon-postgres"></i> Postgres
+      </div>
+    </div>
+  </div>
+
+
+  <div id="projects" class="container content_panel">
+    <div class="row skills_header">
+      <div class="larger_font">PROJECTS</div>
+      <div class="">What I am doing.</div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="project_container">
+          <div class="project_title">
+            <a href="http://www.gregsantulli.com/drummerscript">
+              DRUMMERSCRIPT
+            </a>
+            <a href="https://github.com/GregSantulli/drummerscript">
+              <i class="fa fa-github menu_icons"></i>
+            </a>
+          </div>
+          <a href="http://www.gregsantulli.com/drummerscript">
+            <img src="imgs/drummerscript.png" alt="">
+          </a>
+
+          <p>
+            A programmable drum sequencer built with the Web Audio API.
+          </p>
+          <p>
+            <div>Technologies Used:</div> JavaScript, Web Audio API, jQuery, AJAX, Handle Bars, GitHub Pages.
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="project_container">
+          <div class="project_title">
+            <!-- <a href="#"> -->
+              WHERE'S MY MONEY
+            <!-- </a> -->
+            <a href="#">
+              <i class="fa fa-github menu_icons"></i>
+            </a>
+          </div>
+          <a href="">
+            <img src="imgs/wheres-my-money.png" alt="">
+          </a>
+          <p>There's $41 Billion in unclaimed funds in the US. This app that helps people find money that might be owed to them.</p>
+          <p>
+            <div>Technologies Used:</div>
+            Ruby, Rails, Redis/Resque, Rackspace, Nokogiri/HTTParty, Mandrill, Google Contact API, D3 Datamaps.
+          </p>
+
+        </div>
+
+      </div>
+      <div class="col-sm-4">
+        <div class="project_container">
+          <div class="project_title">
+            <a href="https://serene-sands-4034.herokuapp.com/">
+              CONTEMPORARY HOMES
+            </a>
+            <a href="https://github.com/GregSantulli/contemporary-homes">
+              <i class="fa fa-github menu_icons"></i>
+            </a>
+          </div>
+
+          <a href="#">
+            <img src="imgs/contemporary-homes-screenshot.png" alt="">
+          </a>
+          <p>
+            This is an app I am bulding for a real estate broker. The app will be used to showcase home listings and photos to potential buyers. The broker will also be able to log in as an admin to add, remove, or edit existing listings.
+          </p>
+          <p>
+            <div>Technologies Used:</div> Ruby, Rails, JavaScript, CarrierWave, Amazon S3, Google Maps API, Heroku.
+          </p>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+ <!--  <div id="skills" class="my_skills content_panel">
+    <div class="row skills_header">
+      <div class="larger_font">EXPERIENCE</div>
+      <div class="">What I have done.</div>
+    </div>
+
+
+  </div>
+ -->
+
 
 
 
