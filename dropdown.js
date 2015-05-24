@@ -3,6 +3,7 @@ $( document ).ready(function() {
   $('body').scrollspy({ target: '#navbar' })
   navClickListener();
   scrollArrowListener();
+  moreButtonListener();
 });
 
 
@@ -25,5 +26,17 @@ function scrollArrowListener(){
       $('html,body').animate({
           scrollTop: $("#about").offset().top},
           'slow');
+  });
+}
+
+
+function moreButtonListener(){
+  console.log('kdghf')
+  $('#more_button').on('click', function(event){
+    event.preventDefault();
+    $(this).hide();
+    $('#more_about').fadeIn();
+
+
   });
 }

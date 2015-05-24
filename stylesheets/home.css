@@ -1,37 +1,24 @@
 
 
-body{
+body, html{
   background-color: #e7eff6;
   margin: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2a4d69;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   position: relative;
+  /*width: 100%;*/
 }
 
-.navigation_container{
-  width:100%;
-  height: 100px;
-  position: absolute;
-  top:0px;
-  left: 0px;
-  right: 0px;
-  display: flex;
-  align-items: center;
-  background-color: rgba(42,77,105, 0.7 );
-  z-index: 10;
-  color: #fafafa;
-  letter-spacing: 2px;
-}
-
-.header{
+/*.header{
   display: inline-flex;
   align-items: center;
   padding-left: 5%;
   padding-right: 1%;
   min-width: 450px;
-}
+
+}*/
 
 
 
@@ -171,30 +158,42 @@ body{
 
   }
 
-  .headshot{
+
+  .headshot_container{
     height: auto;
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    border-radius: 3px;
+
+
   }
+
+  .headshot_container img{
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 3px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 70px;
+  }
+
+
+
+
+
 
   .content{
     /*border: 1px solid red;*/
     width: 100%;
-    display: inline-flex;
-    justify-content: center;
+    /*display: inline-flex;
+    justify-content: center;*/
     color: rgba(42,77,105, 1 )
   }
 
   .tag_line{
-    height: 400px;
-    display: flex;
-    vertical-align: middle;
-    /*border: 1px solid green;*/
-    margin-left: 5%;
+    height: auto;
+    /*padding-top: 80px;*/
+    /*margin-top: 50px;*/
+    padding-bottom: 40px;
     width: 100%;
     min-width: 300px;
-    align-items: center;
     padding-left: 5%;
     padding-right: 5%;
     color: rgba(42,77,105, 1 );
@@ -211,7 +210,7 @@ body{
   .project_container{
     display: inline-block;
     width: 100%;
-    height: 490px;
+    height: auto;
     background-color: #2a4d69;
     color: #fafafa;
     margin: auto;
@@ -250,10 +249,11 @@ body{
   background-image: url('../imgs/sf_background.jpg') ;
   background-size: cover;
   background-position: center center;
-  height: 800px;
+  height: 700px;
   position: relative;
+  color: #fafafa;
+  overflow: hidden;
 
-  color: #fafafa
 }
 
 .name_box{
@@ -262,10 +262,10 @@ body{
   background-color: rgba(42,77,105, 0.8 );
   border-radius: 3px;
   width: 95%;
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
   text-align: center;
-  margin-top: 300px
+  margin-top: 250px
 }
 
 
@@ -297,7 +297,7 @@ body{
 }
 
 .skills{
-  text-align: center;
+  /*text-align: center;*/
   margin: auto;
   font-size: 1.5em;
 }
@@ -306,6 +306,8 @@ body{
   font-size: 3em;
   vertical-align: middle;
   margin-right: 20px;
+  padding-left: 30%;
+
 
 }
 
@@ -344,6 +346,11 @@ body{
 
 
 .about.row{
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#more_about{
+  display: none;
+
 }
