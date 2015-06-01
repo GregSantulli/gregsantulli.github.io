@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-  // navFaderListener();
+  $(document).bind('scroll', navFader);
   $('body').scrollspy({ target: '#navbar' })
   navClickListener();
   scrollArrowListener();
@@ -7,10 +7,12 @@ $( document ).ready(function() {
 });
 
 
-function navFaderListener() {
-  var navBar = $('.navigation_container')
+function navFader() {
+  var navBar = $('.navbar')
   var documentTop = $(document).scrollTop()
   navBar.css("background-color", "rgba(42,77,105," +  (0.7 + (documentTop/500)) + ")");
+  navBar.css("border-bottom", "1px solid rgba(224,224,224," +  ((documentTop/500)) + ")");
+
 }
 
 
@@ -23,20 +25,17 @@ function navClickListener(){
 
 function scrollArrowListener(){
   $(".down_arrow").click(function(){
-      $('html,body').animate({
-          scrollTop: $("#about").offset().top},
-          'slow');
+    $('html,body').animate({
+      scrollTop: $("#about").offset().top},
+      'slow');
   });
 }
 
 
 function moreButtonListener(){
-  console.log('kdghf')
   $('#more_button').on('click', function(event){
     event.preventDefault();
     $(this).hide();
     $('#more_about').fadeIn();
-
-
   });
 }

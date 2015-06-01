@@ -2,31 +2,31 @@
 
 
 <head>
+
   <title>Greg Santulli | Web Developer</title>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/4.9.0/bootstrap-social.css">
-
   <link rel="stylesheet" href="font-mfizz-1.2/font-mfizz.css">
-
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/89f2f44ba07ea3fff7e561c2142813b278c2d6c6/devicon.min.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-
   <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
   <script src="dropdown.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target="#navbar">
 
 
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+    <div class="nav_container container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <span class="sr-only">Toggle navigation</span>
@@ -41,96 +41,64 @@
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#projects">PROJECTS</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CONTACT <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="mailto:gregsantulli@gmail.com">gregsantulli@gmail.com</a></li>
-              <li class="divider"></li>
-
-              <li><a href="https://github.com/GregSantulli">
-                <i class="fa fa-github menu_icons"></i> GitHub</a></li>
-                <li><a href="https://www.facebook.com/gregsantulli"><i class="fa fa-facebook menu_icons"></i> Facebook</a></li>
-                <li><a href="https://twitter.com/greg_santulli"><i class="fa fa-twitter menu_icons"></i> Twitter</a></li>
-                <li><a href="https://www.linkedin.com/in/gregsantulli">
-                  <i class="fa fa-linkedin menu_icons"></i> LinkedIn</a></li>
-                </ul>
-              </li>
-
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-      <div class="container-fluid">
-        <div id="home" class="row sf">
-
-          <div class="col-sm-12">
-            <div class="name_box">
-              <div class="name">GREG SANTULLI</div>
-              <div class="double_line"></div>
-              <div class="web_dev">WEB DEVELOPER</div>
-            </div>
-          </div>
-
-          <div class="down_arrow">
-            <div class="glyphicon glyphicon-chevron-down"></div>
-          </div>
-
-
-        </div>
-
-
-
-
-        <div  id="about">
-          <div class="about row">
-            <div class="col-md-5 col-sm-offset-1 text-center headshot_container">
-              <img src="imgs/headshot.jpg" alt="Headshot">
-            </div>
-
-            <div class="col-md-5">
-
-              <div class="tag_line">
-                <div class="welcome_box">
-                  <div class="large_font">Hi, I'm Greg.</div>
-                    <p>
-                      I am a full-stack web developer who loves to build useful applications with clean and concise code.  Everyday I am looking for new projects to challenge me as a developer while at the same time contributing to the world around me.
-                    </p>
-
-
-                    <p>
-                      All my life I have always been curious as to the way things work. I like taking a look under the hood to see what's really going on.  I am not afraid to jump in and poke around to better understand what I am doing. This is why I decided to learn to code. Technology has become such an integral part of our lives and with it came an insatiable desire to understand it.
-                    </p>
-
-
-
-
-                  <div  id="more_about">
-
-                    <p>
-                      I was born and raised in New York and have BS in Business Administration from Fordham University. With over two years of experience at a travel-marketing firm, I have been to some amazing places around the globe and worked closely with people from all kinds of different cultures.
-                    </p>
-
-                  <p>
-                    I have experience working on teams, whether it is pair programming or large groups of people. Communication comes naturally to me; I love to meet new people and make new friends. I'd like to put my skills to work for you so we can build something meaningful together.
-                  </p>
-
-
-
-
-
-                </div>
-                      <a href="#" id="more_button">Read More</a>
-
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
       </div>
+    </div>
+  </nav>
+
+
+  <div class="container-flux">
+    <div id="home" class="sf">
+
+      <div class="name_box">
+        <div class="name">GREG SANTULLI</div>
+        <div class="double_line"></div>
+        <div class="web_dev">WEB DEVELOPER</div>
+      </div>
+
+      <div class="down_arrow">
+        <div class="glyphicon glyphicon-chevron-down"></div>
+      </div>
+
+
+    </div>
+
+
+
+
+    <div  id="about">
+      <div class="about row">
+        <div class="col-md-3 col-sm-offset-1 headshot_container">
+          <img src="imgs/headshot.jpg" alt="Headshot">
+        </div>
+
+        <div class="col-md-7">
+
+          <div class="tag_line">
+            <div class="large_font">Hi, I'm Greg.</div>
+            <p>
+              I am a full-stack web developer who loves to build useful applications with clean and concise code.  Everyday I am looking for new projects to challenge me as a developer while at the same time contributing to the world around me.
+            </p>
+            <p>
+              All my life I have always been curious as to the way things work. I like taking a look under the hood to see what's really going on.  I am not afraid to jump in and poke around to better understand what I am doing. This is why I decided to learn to code. Technology has become such an integral part of our lives and with it came an insatiable desire to understand it.
+            </p>
+            <div  id="more_about">
+              <p>
+                I was born and raised in New York and have BS in Business Administration from Fordham University. With over two years of experience at a travel-marketing firm, I have been to some amazing places around the globe and worked closely with people from all kinds of different cultures.
+              </p>
+              <p>
+                I have experience working on teams, whether it is pair programming or large groups of people. Communication comes naturally to me; I love to meet new people and make new friends. I'd like to put my skills to work for you so we can build something meaningful together.
+              </p>
+            </div>
+            <a href="#" id="more_button">Read More</a>
+
+
+
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
@@ -142,31 +110,55 @@
       </div>
 
       <div class="row skills">
-        <div class="col-md-3">
-          <i class="icon icon-ruby"></i> Ruby
+        <div class="col-sm-2">
+          <i class="devicon-ruby-plain"></i>
+          <div>Ruby</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-ruby-on-rails"></i> Ruby on Rails
+        <div class="col-sm-2">
+          <i class="devicon-rails-plain"></i>
+          <div>Rails</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-javascript"></i> JavaScript
+        <div class="col-sm-2">
+          <i class="devicon-python-plain"></i>
+          <div>Python</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-database"></i> </i> SQL
+        <div class="col-sm-2">
+          <i class="devicon-javascript-plain"></i>
+          <div>JavaScript</div>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-jquery-plain"></i>
+          <div>jQuery</div>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-git-plain"></i>
+          <div>Git</div>
         </div>
       </div>
       <div class="row skills">
-        <div class="col-md-3">
-          <i class="icon icon-html"></i> HTML
+        <div class="col-sm-2">
+          <i class="devicon-html5-plain"></i>
+          <div>HTML5</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-css"></i> CSS
+        <div class="col-sm-2">
+          <i class="devicon-css3-plain"></i>
+          <div>CSS3</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-heroku"></i> Heroku
+        <div class="col-sm-2">
+          <i class="devicon-heroku-original"></i>
+          <div>Heroku</div>
         </div>
-        <div class="col-md-3">
-          <i class="icon icon-postgres"></i> PostgreSQL
+        <div class="col-sm-2">
+          <i class="devicon-amazonwebservices-original"></i>
+          <div>Amazon Web Services</div>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-postgresql-plain"></i>
+          <div>PostgreSQL</div>
+        </div>
+        <div class="col-sm-2">
+          <i class="devicon-photoshop-plain"></i>
+          <div>Photoshop</div>
         </div>
       </div>
     </div>
@@ -179,49 +171,34 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-6">
           <div class="project_container">
             <div class="project_title">
               <a href="http://www.gregsantulli.com/drummerscript">
                 DRUMMERSCRIPT
               </a>
               <a href="https://github.com/GregSantulli/drummerscript">
-                <i class="fa fa-github menu_icons"></i>
+                <i class="fa fa-github"></i>
               </a>
             </div>
-            <a href="http://www.gregsantulli.com/drummerscript">
-              <img src="imgs/drummerscript.png" alt="">
-            </a>
-
-            <p>
-              A programmable drum sequencer built with the Web Audio API.
-            </p>
-            <p>
-              <div>Technologies Used:</div> JavaScript, Web Audio API, jQuery, AJAX, Handle Bars, GitHub Pages.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="project_container">
-            <div class="project_title">
-              WHERE'S MY MONEY
-              <a href="https://github.com/bclin2/wheresmymoneypublic">
-                <i class="fa fa-github menu_icons"></i>
+            <div class="project_image_container">
+              <a href="http://www.gregsantulli.com/drummerscript">
+                <img src="imgs/drummerscript.png" alt="">
               </a>
             </div>
+            <div class="project_description">
 
-            <img src="imgs/wheres-my-money.png" alt="">
-
-            <p>There's $41 Billion in unclaimed funds in the US. This app that helps people find money that might be owed to them. This project is currently offline however feel free to look at the source code on GitHub</p>
-            <p>
-              <div>Technologies Used:</div>
-              Ruby, Rails, Redis/Resque, Rackspace, Nokogiri/HTTParty, Mandrill, Google Contact API, D3 Datamaps.
-            </p>
-
+              <p>
+                A programmable drum sequencer built with the Web Audio API.
+              </p>
+              <p>
+                <div>Technologies Used:</div> JavaScript, Web Audio API, jQuery, AJAX, Handle Bars, GitHub Pages.
+              </p>
+            </div>
           </div>
-
         </div>
-        <div class="col-sm-4">
+
+        <div class="col-md-6">
           <div class="project_container">
             <div class="project_title">
               <a href="https://serene-sands-4034.herokuapp.com/">
@@ -232,35 +209,93 @@
               </a>
             </div>
 
-            <a href="https://serene-sands-4034.herokuapp.com/">
-              <img src="imgs/contemporary-homes-screenshot.png" alt="">
-            </a>
-            <p>
-              This is an app I am bulding for a real estate broker. The app will be used to showcase home listings and photos to potential buyers. The broker will also be able to log in as an admin to add, remove, or edit existing listings.
-            </p>
-            <p>
-              <div>Technologies Used:</div> Ruby, Rails, JavaScript, CarrierWave, Amazon S3, Google Maps API, Heroku.
-            </p>
+            <div class="project_image_container">
+              <a href="https://serene-sands-4034.herokuapp.com/">
+                <img src="imgs/contemporary-homes-screenshot.png" alt="">
+              </a>
+            </div>
+
+            <div class="project_description">
+              <p>
+                This is an app I am bulding for a real estate broker. The app will be used to showcase home listings and photos to potential buyers. The broker will also be able to log in as an admin to add, remove, or edit existing listings.
+              </p>
+              <p>
+                <div>Technologies Used:</div> Ruby, Rails, JavaScript, CarrierWave, Amazon S3, Google Maps API, Heroku.
+              </p>
+            </div>
 
           </div>
         </div>
+      </div>
+
+
+    </div>
+
+    <div id="contact" class="my_skills content_panel">
+      <div class="row skills_header">
+        <div class="larger_font">CONTACT</div>
+        <div class="">Let's get in touch.</div>
+      </div>
+      <div class="social row">
+        <div class="col-sm-2">
+          <a href="mailto:gregsantulli@gmail.com">
+            <i class="fa fa-envelope-o"></i>
+            <div>Gmail</div>
+          </a>
+        </div>
+
+
+        <div class="col-sm-2">
+          <a href="https://github.com/GregSantulli">
+            <i class="fa fa-github"></i>
+            <div>GitHub</div>
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="https://www.linkedin.com/in/gregsantulli">
+            <i class="fa fa-linkedin"></i>
+            <div>LinkedIn</div>
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="https://twitter.com/greg_santulli">
+            <i class="fa fa-twitter"></i>
+            <div>Twitter</div>
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="https://www.facebook.com/greg.santulli">
+            <i class="fa fa-facebook"></i>
+            <div>Facebook</div>
+          </a>
+        </div>
+
+        <div class="col-sm-2">
+          <a href="Greg_Santulli_Web_Developer_2015.pdf">
+          <i class="fa fa-file-pdf-o"></i>
+          <div>Resume</div>
+        </a>
+        </div>
+
+
+
 
       </div>
+
+
     </div>
   </div>
+</div>
 
 
- <!--  <div id="skills" class="my_skills content_panel">
-    <div class="row skills_header">
-      <div class="larger_font">EXPERIENCE</div>
-      <div class="">What I have done.</div>
-    </div>
 
-
-  </div>
--->
 
 
 
 
 </body>
+
+
