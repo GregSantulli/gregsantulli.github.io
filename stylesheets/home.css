@@ -302,6 +302,10 @@ a {
   text-decoration: none;
 }
 
+#home, #about, #skills, #projects, #contact{
+  min-height: 800px;
+}
+
 
 @media (max-width: 767px) {
 
@@ -318,8 +322,9 @@ a {
     font-size: 1.5em
   }
 
-  .sf{
-    height: 600px;
+  #home {
+    min-height: 400px;
+    overflow: hidden;
   }
 
   .name_box{
