@@ -166,9 +166,10 @@ a {
 
 .project_image_container{
   width: 100%;
-  max-height: 300px;
+  height: auto;
+  /*max-height: 300px;*/
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 2px;
   margin-bottom: 20px;
 
 }
