@@ -1,8 +1,8 @@
 body{
-  background-color: #e7eff6;
+  background-color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2a4d69;
+  color: #182e5d;
   font-family: 'Open Sans', sans-serif;
   position: relative;
 }
@@ -13,7 +13,7 @@ body{
 
 .navbar{
   height: 70px;
-  background-color:rgba(42,77,105, 0.7 );
+  background-color:rgba(24,46,93, 0.7 );
   color: white;
   border-bottom: 0px;
   width: 100%;
@@ -55,7 +55,7 @@ body{
 
 a {
   text-decoration: none;
-  color: #2a4d69
+  color: #182e5d
 }
 
 
@@ -68,7 +68,7 @@ a {
 .contact_bar_container{
   height: 70px;
   width: 100%;
-  background-color:#4b86b4;
+  background-color:#182e5d;
   display: none;
   align-items:center;
   justify-content: right;
@@ -125,7 +125,7 @@ a {
   min-width: 300px;
   padding-left: 5%;
   padding-right: 5%;
-  color: rgba(42,77,105, 1 );
+  color: rgba(24,46,93, 1 );
 }
 
 
@@ -135,7 +135,7 @@ a {
   display: inline-block;
   width: 100%;
   height: auto;
-  background-color: #2a4d69;
+  background-color: #182e5d;
   color: #fafafa;
   margin: auto;
   margin-bottom: 20px;
@@ -180,7 +180,7 @@ a {
 
 
 .sf{
-  background-image: url('../imgs/sf_background.jpg');
+  background-image: url('../imgs/nyc_background.jpg');
   background-size: cover;
   background-position: center center;
   height: 700px;
@@ -194,7 +194,7 @@ a {
 .name_box{
   /*border: 1px solid white;*/
   padding: 20px;
-  background-color: rgba(42,77,105, 0.8 );
+  background-color: rgba(24,46,93, 0.8 );
   border-radius: 3px;
   width: 95%;
   max-width: 700px;
@@ -239,8 +239,18 @@ a {
 #skills i, #contact i {
   font-size: 5em;
   vertical-align: middle;
-  margin-bottom: 20px;
+  margin-top: 20px;
   display: block;
+}
+
+#contact i {
+  height: 60px;
+  line-height: 60px;
+  vertical-align:  middle;
+}
+
+#skills i{
+  margin-bottom:  20px;
 }
 
 
@@ -253,7 +263,7 @@ a {
 
 .my_skills{
   color: #fafafa;
-  background-color: #2a4d69
+  background-color: #182e5d;
 }
 
 .content_panel{
@@ -293,16 +303,18 @@ a {
 
 .social .col-sm-2 {
   text-align: center;
-  margin-bottom: 30px;
+  vertical-align: middle;
 }
 
 #contact a  {
   color: white;
   opacity: 0.7;
   text-decoration: none;
+  font-size: .7em;
+  margin-bottom:  0px;
 }
 
-#home, #about, #skills, #projects, #contact{
+#home, #about, #projects {
   min-height: 800px;
 }
 
@@ -310,7 +322,7 @@ a {
 @media (max-width: 767px) {
 
   .navbar-collapse {
-    background-color:rgba(42,77,105, 1 );
+    background-color:rgba(21,20,18, 1 );
     border-top: 0px;
   }
 
@@ -328,12 +340,13 @@ a {
   }
 
   .name_box{
-    margin-top: 200px;
+    margin-top: 100px;
   }
 
   .about.row{
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
 
 }
