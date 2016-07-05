@@ -17,12 +17,14 @@ body{
 .section {
   width: 100%;
   float: left;
+  padding-bottom: 60px;
   /*background-color: rgba(21,20,18, 0.4 );*/
 }
 
 .align-right{
   text-align: right;
   padding-right: 10%;
+
 }
 
 .align-left{
@@ -34,9 +36,8 @@ body{
   /*margin-left: 10%;*/
   /*margin-right: 10%;*/
   float: left;
-  text-align: left;
   margin-top: 70px;
-  width: 50%;
+  width: 100%;
   font-size: 5em;
 }
 
@@ -61,6 +62,36 @@ body{
 .name {
   font-size: 4em;
   line-height: 2em;
+}
+
+#connect{
+  width: 100%;
+  height: 3em;
+  line-height: 3em;
+
+}
+
+#connect div{
+  text-decoration: none;
+  color: white;
+  width: 25%;
+  float: left;
+  height: 3em;
+  line-height: 3em;
+  vertical-align: middle;
+}
+
+#connect a {
+  text-decoration: none;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  /*line-height: 3em;*/
+  /*vertical-align: middle;*/
+}
+
+#connect a:hover{
+  font-size: 1.5em
 }
 
 .dev{
@@ -137,8 +168,7 @@ body{
   margin-top: 20px
 }
 
-#collaborate .skill-box i  {
-}
+
 
 
 
@@ -147,7 +177,35 @@ body{
   .name-panel {
     width: 95%;
     min-width: 0px;
-    /*margin-top: 20px;*/
+    margin-top: 100px;
+
+  }
+
+  #connect div{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+
+  #connect a{
+    font-size: 5em;
+    line-height: auto;
+    height: auto;
+  }
+
+  #connect a:hover {
+    font-size: 5em;
+  }
+
+  .header{
+    text-align: center;
+    padding: 0px;
+  }
+
+  .skill-box{
+    width: 50%;
 
   }
 

@@ -7,22 +7,34 @@ $( document ).ready(function() {
   setLetterSpacing()
 
 
+  $(".down-arrow").on('click', function() {
+    $('html, body').animate({
+        scrollTop: $('#develop').offset().top
+      }, 800, function(){
+    });
+  });
+
+
 });
+
+
+
 
 function setLetterSpacing(){
   var headers = $('.header')
   for (var i = 0; i < headers.length; i++) {
     var header = headers[i]
     var letterCount = $(header).html().trim().length
-    console.log(letterCount * 2 + "px")
-    $(header).css('letter-spacing', window.innerWidth/ 5 / letterCount+ "px")
+    var lmao = letterCount + "px"
+    console.log(lmao)
+    $(header).css('letter-spacing', lmao)
   };
 
 }
 
 function setSectionHeights(){
   var height = getWindowHeight()
-  $('.landing.section').css('min-height', height)
+  $('.section').css('min-height', height)
   checkWindowHeight(height)
 }
 
