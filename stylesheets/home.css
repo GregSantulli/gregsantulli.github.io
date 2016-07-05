@@ -74,7 +74,7 @@ body{
 #connect div{
   text-decoration: none;
   color: white;
-  width: 25%;
+  width: 20%;
   float: left;
   height: 3em;
   line-height: 3em;
@@ -177,7 +177,7 @@ body{
   .name-panel {
     width: 95%;
     min-width: 0px;
-    margin-top: 100px;
+    margin-top: 10px;
 
   }
 
