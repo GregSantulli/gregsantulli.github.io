@@ -1,11 +1,8 @@
 $( document ).ready(function() {
   $(document).bind('scroll', navFader);
+  $(document).bind('scroll', setSectionHeights);
   setSectionHeights()
-  addEvent(window, "resize", setSectionHeights)
-  addEvent(window, "resize", setLetterSpacing)
   AOS.init()
-  setLetterSpacing()
-
 
   $(".down-arrow").on('click', function() {
     $('html, body').animate({
@@ -18,24 +15,10 @@ $( document ).ready(function() {
 });
 
 
-
-
-function setLetterSpacing(){
-  var headers = $('.header')
-  for (var i = 0; i < headers.length; i++) {
-    var header = headers[i]
-    var letterCount = $(header).html().trim().length
-    var lmao = letterCount + "px"
-    console.log(lmao)
-    $(header).css('letter-spacing', lmao)
-  };
-
-}
-
 function setSectionHeights(){
   var height = getWindowHeight()
-  $('.section').css('min-height', height)
-  checkWindowHeight(height)
+    $('.landing.section').css('min-height', height)
+    checkWindowHeight(height)
 }
 
 function getWindowHeight(){
@@ -52,18 +35,6 @@ function checkWindowHeight(height){
     $('.navigate').show()
   }
 }
-
-function addEvent(object, type, callback) {
-  if (object == null || typeof(object) == 'undefined') return;
-  if (object.addEventListener) {
-    object.addEventListener(type, callback, false);
-  } else if (object.attachEvent) {
-    object.attachEvent("on" + type, callback);
-  } else {
-    object["on"+type] = callback;
-  }
-};
-
 
 function navFader() {
   var navBar = $('.navbar')

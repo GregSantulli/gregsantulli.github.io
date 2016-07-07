@@ -1,5 +1,6 @@
+
 body{
-  background-color: #ffffff;
+  background-color: rgba( 24, 46, 93, 0.7 );
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
@@ -14,10 +15,13 @@ body{
 }
 
 
+
 .section {
   width: 100%;
   float: left;
   padding-bottom: 60px;
+  height: auto;
+  display: block;
   /*background-color: rgba(21,20,18, 0.4 );*/
 }
 
@@ -32,16 +36,6 @@ body{
   padding-left: 10%;
 }
 
-.section .header{
-  /*margin-left: 10%;*/
-  /*margin-right: 10%;*/
-  float: left;
-  margin-top: 70px;
-  width: 100%;
-  font-size: 5em;
-}
-
-
 .landing {
   display: flex;
   align-items: center;
@@ -50,13 +44,16 @@ body{
 
 .name-panel{
   width: 50%;
-  background-color: rgba( 24, 46, 93, 0.7 );
   margin: auto;
   text-align: center;
   letter-spacing: 6px;
   border-radius: 4px;
   display: block;
   min-width: 620px
+}
+
+.transparent-blue-background{
+  background-color: rgba( 24, 46, 93, 0.7 );
 }
 
 .name {
@@ -137,13 +134,16 @@ body{
 
 
 
-#develop, #operate, #collaborate{
+#develop{
+  min-height: 800px;
   /*background-color: #182e5d*/
   background-color: rgba( 24, 46, 93, 0.7 )
 }
 
 .skill-row{
   width: 100%;
+  max-width: 1200px;
+  margin: auto;
 /*  display: flex;
   align-items: center;
   justify-content: space-around;*/
@@ -174,10 +174,119 @@ body{
 
 .drummer img{
   border-radius: 10px;
-  max-width: 1200px;
+  max-width: 1000px;
   width: 100%;
   box-shadow:   5px 5px 30px #18105d;
 
+}
+
+.resume.section{
+  display: block;
+  float: left;
+
+}
+
+
+.resume-body{
+  margin: auto;
+  max-width: 1200px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 100px;
+  text-shadow: 1px 1px 5px #18105d
+}
+
+.resume-body a, .resume-body a:hover {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.header{
+  font-size: 3em;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  border-top: 2px solid white;
+
+}
+
+.experience{
+  margin-bottom: 50px
+}
+
+.job-header{
+  background-color: rgba( 24, 46, 93, 1 );
+  width: 100%;
+  border-radius: 3px;
+}
+
+.job-header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba( 24, 46, 93, 1 );
+
+}
+
+.job-header div{
+  padding-left: 20px;
+  padding-right: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+}
+
+.job-title{
+  padding-left: 20px;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.job-name{
+  font-size: 2em;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0px;
+  float: left;
+}
+
+.job-location{
+  font-size: 1em;
+  padding-right: 20px;
+  line-height: 50px;
+  vertical-align: middle;
+  min-width: 100px;
+  float: right;
+
+}
+
+.job-time{
+  display: inline-block;
+  line-height: 50px;
+  height: 50px;
+  vertical-align: middle;
+  float:right;
+  text-align: right;
+  padding-right: 3%;
+}
+
+.job-description{
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+.split{
+  border-bottom: 2px solid white;
+  width: 100%;
+  margin-bottom: 30px
+}
+
+
+.footer{
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -215,11 +324,6 @@ body{
     font-size: 5em;
   }
 
-  .header{
-    text-align: center;
-    padding: 0px;
-  }
-
   .skill-box{
     width: 50%;
 
@@ -251,5 +355,10 @@ body{
     padding-bottom: 50px;
   }
 
+  .job-time{
+    display: block;
+    text-align: left;
+    width: 100%
+  }
 
 }
