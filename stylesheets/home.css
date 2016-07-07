@@ -237,6 +237,7 @@ body{
 }
 
 .job-title{
+  display: inline-block;
   padding-left: 20px;
   line-height: 50px;
   vertical-align: middle;
