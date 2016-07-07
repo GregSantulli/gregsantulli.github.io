@@ -356,9 +356,22 @@ body{
   }
 
   .job-time{
+    display: none;
+  }
+
+  .job-location{
+    width: 100%;
     display: block;
-    text-align: left;
-    width: 100%
+    padding-left: 20px;
+  }
+
+  .job-description{
+    padding-left: 20px;
+    padding-right: 20px
+  }
+
+  .footer{
+    padding-top: 70px;
   }
 
 }
