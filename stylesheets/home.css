@@ -14,6 +14,10 @@ body{
 
 }
 
+.center-text{
+  text-align: center;
+}
+
 
 
 .section {
@@ -71,7 +75,7 @@ body{
 #connect div{
   text-decoration: none;
   color: white;
-  width: 20%;
+  width: 16.6667%;
   float: left;
   height: 3em;
   line-height: 3em;
@@ -203,7 +207,7 @@ body{
 }
 
 .header{
-  font-size: 3em;
+  font-size: 2em;
   text-align: left;
   padding-left: 20px;
   padding-top: 30px;
@@ -241,12 +245,12 @@ body{
   padding-left: 20px;
   line-height: 50px;
   vertical-align: middle;
-  font-size: 1.5em;
+  font-size: 1em;
   font-style: italic;
 }
 
 .job-name{
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 50px;
   vertical-align: middle;
   padding: 0px;
@@ -308,11 +312,16 @@ body{
   }
 
   #connect div{
-    width: 100%;
+    width: 50%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
 
+  }
+
+  #facebook{
+    width: 100%;
+    color: red;
   }
 
   #connect a{
