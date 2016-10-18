@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  $(document).bind('scroll', navFader);
   $(document).bind('scroll', setSectionHeights);
   setSectionHeights()
   AOS.init()
@@ -36,12 +35,5 @@ function checkWindowHeight(height){
   }
 }
 
-function navFader() {
-  var navBar = $('.navbar')
-  var documentTop = $(document).scrollTop()
-  navBar.css("background-color", "rgba(42,77,105," +  (0.7 + (documentTop/500)) + ")");
-  navBar.css("border-bottom", "1px solid rgba(224,224,224," +  ((documentTop/500)) + ")");
-
-}
 
 

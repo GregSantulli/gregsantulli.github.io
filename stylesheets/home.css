@@ -30,14 +30,17 @@ body{
 }
 
 .align-right{
+  margin-left: auto;
   text-align: right;
-  padding-right: 10%;
-
 }
 
 .align-left{
   text-align: left;
   padding-left: 10%;
+}
+
+.light-blue{
+  color: #98C4FF;
 }
 
 .landing {
@@ -61,8 +64,14 @@ body{
 }
 
 .name {
+  margin-top: 10px;
   font-size: 4em;
-  line-height: 2em;
+  font-weight: bold;
+}
+
+.slogan{
+  /*font-weight: bold;*/
+  margin-bottom: 15px;
 }
 
 #connect{
@@ -121,13 +130,8 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
+  text-decoration: none;
 }
-
-.navigate {
-  text-decoration: none
-  animation: pulse 2s infinite
-}
-
 
 .horizontal-line{
   width: 90%;
@@ -136,21 +140,21 @@ body{
 }
 
 
-
-
 #develop{
   min-height: 800px;
-  /*background-color: #182e5d*/
   background-color: rgba( 24, 46, 93, 0.7 )
+}
+
+.skill-icons-container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px 
 }
 
 .skill-row{
   width: 100%;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
-/*  display: flex;
-  align-items: center;
-  justify-content: space-around;*/
 }
 
 
@@ -158,8 +162,7 @@ body{
   float: left;
   text-align: center;
   margin-top: 70px;
-  width: 25%;
-
+  width: 20%;
 }
 
 .skill-box i {
@@ -168,6 +171,15 @@ body{
 
 .skill-box div{
   margin-top: 20px
+}
+
+.quote{
+  width: 80%;
+  margin-top: 50px
+}
+
+.quote div {
+  font-style: italic;
 }
 
 .drummer{
@@ -193,7 +205,7 @@ body{
 
 .resume-body{
   margin: auto;
-  max-width: 1200px;
+  max-width: 1000px;
   padding-left: 3%;
   padding-right: 3%;
   padding-bottom: 100px;
@@ -207,8 +219,10 @@ body{
 }
 
 .header{
-  font-size: 2em;
-  text-align: left;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-align: center;
   padding-left: 20px;
   padding-top: 30px;
   margin-bottom: 20px;
@@ -290,6 +304,7 @@ body{
 
 
 .footer{
+  margin-top: 100px;
   width: 100%;
   text-align: center;
 }
@@ -309,6 +324,10 @@ body{
 
   .down-arrow{
     display: none
+  }
+
+  .header{
+    font-size: 2.5em;
   }
 
   #connect div{
@@ -335,7 +354,7 @@ body{
   }
 
   .skill-box{
-    width: 50%;
+    width: 33.33%;
 
   }
 
